@@ -3,24 +3,24 @@
 html{ font-size: 62.5%; }
 
 body{
-  font-size: 2rem;
+  margin: 0;
 }
-
-.box1 {
-  max-width: 100%;
-}
-
-.main-images {
-  width: 100vw; 
-  height: auto;
+ .box {
+  background-image: url("../images/main.jpg");
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
 }
 
 .box2 {
   float: left;
-  width: 32.5%;
-  margin: 5px 5px 10px 5px;
+  width: 380px;
+  margin: 20px;
   flex: 1;
 }
+
+
 .clearfix::after {
     content: '';
     display: block;
@@ -39,7 +39,6 @@ body{
   .boxsub {
   background: #b2b2b2;
   color: #FFF;
-  margin-bottom: 10px;
   height:200px;
   @include display-flex;
     justify-content: space-between;
@@ -76,10 +75,9 @@ footer {
           color: #FFF;
           font-weight: bold;
           background-color: #b2b2b2;
-          @extend .abel;
-          @extend .uppercase;
-          @include border-radius(4px);
           font-size: 1.4rem;
+          border-radius:5px;
+          
         }
 
 
